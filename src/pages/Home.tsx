@@ -6,7 +6,7 @@ function Home() {
             <h1>Space tourism</h1>
             <Button
                 label="Explore"
-                onClick={() => alert('Кнопка нажата!')}
+                onClick={() => window.open("http://localhost:5173/about")}//alert('Кнопка нажата!')}
                 color="black"
                 size="large"
             />
