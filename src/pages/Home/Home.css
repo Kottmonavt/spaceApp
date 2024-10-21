@@ -1,0 +1,45 @@
+.text-container {
+    display: flex;               
+    flex-direction: column;  
+    justify-content: center;    
+    align-items: flex-start;            
+    padding-left: 5%; 
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5%;
+
+}
+.russo {
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-size: 96px
+}
+.roboto {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: flex-start; 
+    font-size: 2rem; 
+    padding-left: 4%;
+    margin-top: 5%;
+}
+.special-button {
+    margin-left: 20px;
+    padding: 11px 22px 8px 22px;
+    font-family: "Russo One", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid #df5d31;
+
+}
