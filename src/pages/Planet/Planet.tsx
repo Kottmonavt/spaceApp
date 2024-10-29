@@ -22,7 +22,10 @@ export const PlanetCard = ({namePlanet, describe, classImage, image, cardClass}:
 
 function Planet() {
     return (
-        <body>
+        <div>
+            <div className='body-text'>
+                <div className='russo-36'>You can choose one of these planets for your journey</div>
+            </div>
             <div className='planet-container'>
                 <div className='row-card'>
                     <div className='planet-card'>
@@ -37,7 +40,7 @@ function Planet() {
                 </div>
                  
             </div>
-        </body>
+        </div>
     )
 }
 

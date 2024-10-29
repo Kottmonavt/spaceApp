@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import './Price.css'
 interface TicketCardProps {
+    cardName: string;
     nameTicket: string;
     price: string;
     positions1: string;
@@ -10,10 +11,10 @@ interface TicketCardProps {
     positions5: string;
 }
 
-export const TicketCard = ({nameTicket,price,positions1,positions2,positions3,positions4,positions5}: TicketCardProps) => {
+export const TicketCard = ({cardName,nameTicket,price,positions1,positions2,positions3,positions4,positions5}: TicketCardProps) => {
     const navigate = useNavigate()
     return (
-        <div className='card'>
+        <div className={cardName}>
             <div className='name-card russo-24'>{nameTicket}</div>
             <div className='price-card russo-36'>{price}</div>
                 <div className='text-card-container roboto-18'>{positions1}</div>
@@ -34,9 +35,9 @@ function Price() {
                 <div className='russo-36'>Available ticket</div>
             </div>           
             <div className='card-container'>
-                <TicketCard nameTicket='Standart ticket' price='$ 1 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10060; 50+ photos and video recording' positions5='&#10060; unlimited food options'/>    
-                <TicketCard nameTicket='VIP ticket' price='$ 5 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10004; 50+ photos and video recording' positions5='&#10060; unlimited food options'/>
-                <TicketCard nameTicket='Exclusive ticket' price='$ 10 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10004; 50+ photos and video recording' positions5='&#10004; unlimited food options'/>
+                <TicketCard cardName='card-standart' nameTicket='Standart ticket' price='$ 1 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10060; 50+ photos and video recording' positions5='&#10060; unlimited food options'/>    
+                <TicketCard cardName='card-vip' nameTicket='VIP ticket' price='$ 5 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10004; 50+ photos and video recording' positions5='&#10060; unlimited food options'/>
+                <TicketCard cardName='card-exclusive' nameTicket='Exclusive ticket' price='$ 10 000 000' positions1='&#10004; 1-month intensive persosnal training' positions2='&#10004; comfortable luxurious seats'  positions3='&#10004; open space included' positions4='&#10004; 50+ photos and video recording' positions5='&#10004; unlimited food options'/>
             </div>
         </div>       
     )
