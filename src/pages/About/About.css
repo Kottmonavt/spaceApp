@@ -1,0 +1,11 @@
+.box-for-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh
+}
+
+.image-nasa {
+  width: 500px;
+  height: 500px;
+}
