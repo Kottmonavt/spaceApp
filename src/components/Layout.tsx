@@ -3,9 +3,9 @@ import React from 'react';
 interface LayoutProps {
     children: React.ReactNode; 
 }
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: LayoutProps) => {
     return (
-        <div style={{width: '100%' }}>
+        <div style={{ minHeight: '100vh', width: '100%' }}>
             {children}
         </div>
     );

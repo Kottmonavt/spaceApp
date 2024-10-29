@@ -5,6 +5,7 @@ function Home() {
     const navigate = useNavigate()   
     return (
         <div>
+            <img src='./src/assets/astronaut.png' alt='Astronaut' className='image-astronaut'/>
             <div className="text-container">
                 <div className='russo'>THINK</div>
                 <div className='russo'>BIGGER, GO</div>
@@ -16,8 +17,9 @@ function Home() {
                 <div className='roboto'>doesn't matter</div>
             </div>
             <div className='button-container'>
-                <div className='special-button' onClick={()=> navigate('/about')}>Explore more</div>
+                <div className='special-button-home' onClick={()=> navigate('/about')}>Explore more</div>
             </div>
+
         </div>
     );
 }
