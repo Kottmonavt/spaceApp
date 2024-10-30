@@ -29,10 +29,22 @@ body {
     font-family: "Russo One", sans-serif;
     font-size: 36px
 }
+.russo-48 {
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-size: 48px
+}
 .roboto-18 {
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 18px;
+}
+.roboto-28 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 28px;
 }
