@@ -3,71 +3,73 @@
     justify-content: center;
     align-items: center;
     margin-top: 2%;
-
+    margin-bottom: 20px;
 }
 .planet-container {
     display: grid;
     margin: 0 auto;
-    width: 100%;
-    position: relative;
     justify-content: space-between;
     max-width: 1200px;
-
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.content1 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-    margin-right: 15%;
-    margin-top: 5%;
-}
-
-.row-card {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    justify-content: center;
-}
-.planet-card {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-}
-
 .planet-inner-box {
     display: grid;
     margin: 0 auto;
-    width: 100%;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(310px, 310px));
+    grid-template-columns: 400px auto 400px;
     position: relative;
     justify-content: space-between;
     max-width: 1200px;
     padding-top: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+
 }
 .image-mars {
+    margin-left: 20%;
     justify-content: flex-start;
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
-.image-saturn {
-    justify-content: flex-start;
-    width: 350px;
-    height: 350px;
+.image-mars:hover {
+    -webkit-transform: rotate(30deg); 
+    transform: rotate(30deg);
 }
 .image-uranus {
+    margin-left: 20%;
     justify-content: flex-start;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-uranus:hover {
+    -webkit-transform: rotate(30deg); 
+    transform: rotate(30deg);
+}
+
+.image-jupiter {
+    margin-left: 20%;
+    justify-content: flex-start;
+    width: 230px;
+    height: 230px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-jupiter:hover {
+    -webkit-transform: rotate(30deg); 
+    transform: rotate(30deg);
 }
 .text-planet {
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    margin-left: 15%;
+
 }
 .text-name-planet {
     margin-bottom: 5%;
@@ -79,5 +81,29 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    margin-top: 15%;
+    margin-left: 35%;
+}
+.image-mercury {
+    margin-left: 20%;
+    justify-content: flex-start;
+    width: 230px;
+    height: 230px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-mercury:hover {
+    -webkit-transform: rotate(-15deg); 
+    transform: rotate(-15deg);
+}
+.image-venus {
+    margin-left: 20%;
+    justify-content: flex-start;
+    width: 230px;
+    height: 230px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.image-venus:hover {
+    -webkit-transform: rotate(-15deg); 
+    transform: rotate(-15deg);
 }
